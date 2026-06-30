@@ -1,0 +1,20 @@
+{
+  "name": "asanka-portfolio",
+  "version": "1.0.0",
+  "description": "Simple Hostinger-ready portfolio website with admin uploads.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node scripts/verify-build.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "lottie-web": "^5.13.0",
+    "multer": "^2.2.0"
+  }
+}

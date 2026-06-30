@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Portfolio</title>
+    <link rel="stylesheet" href="/site.css" />
+  </head>
+  <body class="admin-page">
+    <main class="admin-shell">
+      <section class="admin-card" id="login-card">
+        <p class="eyebrow">Admin</p>
+        <h1>Manage Portfolio</h1>
+        <form id="login-form">
+          <label>
+            Password
+            <input type="password" id="password" required autocomplete="current-password" />
+          </label>
+          <button class="button primary" type="submit">Unlock</button>
+        </form>
+        <p class="small">Default password is <strong>change-me-now</strong>. Set ADMIN_PASSWORD on Hostinger.</p>
+      </section>
+
+      <section class="admin-dashboard hidden" id="dashboard">
+        <div class="admin-topbar">
+          <div>
+            <p class="eyebrow">Dashboard</p>
+            <h1>Update your portfolio</h1>
+          </div>
+          <a class="button" href="/">View Website</a>
+        </div>
+
+        <section class="admin-card">
+          <h2>Profile</h2>
+          <form id="profile-form" class="form-grid">
+            <label>Name <input name="name" required /></label>
+            <label>Role <input name="role" required /></label>
+            <label>Location <input name="location" /></label>
+            <label>Email <input name="email" type="email" /></label>
+            <label>Phone <input name="phone" /></label>
+            <label>CV Link <input name="cvUrl" /></label>
+            <label>LinkedIn <input name="linkedin" /></label>
+            <label class="full">Intro <textarea name="intro" rows="3"></textarea></label>
+            <label class="full">Skills <input name="skills" placeholder="JavaScript, Node.js, React" /></label>
+            <button class="button primary" type="submit">Save Profile</button>
+          </form>
+        </section>
+
+        <section class="admin-card">
+          <h2>Add Work</h2>
+          <form id="item-form" class="form-grid">
+            <label>Title <input name="title" required /></label>
+            <label>
+              Type
+              <select name="type">
+                <option>Software</option>
+                <option>Product</option>
+                <option>Website</option>
+                <option>Image</option>
+                <option>Project</option>
+              </select>
+            </label>
+            <label class="full">Description <textarea name="description" rows="3"></textarea></label>
+            <label>Tech / Tools <input name="tech" /></label>
+            <label>Link <input name="link" /></label>
+            <label class="full">Image <input name="image" type="file" accept="image/*" /></label>
+            <button class="button primary" type="submit">Add Item</button>
+          </form>
+        </section>
+
+        <section class="admin-card">
+          <h2>Current Work</h2>
+          <div class="admin-list" id="admin-list"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/admin.js"></script>
+  </body>
+</html>

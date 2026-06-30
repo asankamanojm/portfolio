@@ -1,0 +1,33 @@
+{
+  "profile": {
+    "name": "Asanka Manoj Mudannayaka",
+    "role": "Digital Marketing & AI Automation Specialist",
+    "intro": "I combine SEO, Google Ads, Meta Ads, WordPress, creative content, and AI automation to help businesses capture inquiries, follow up faster, and convert more leads into sales opportunities.",
+    "location": "Dubai, UAE",
+    "email": "manomudan@gmail.com",
+    "phone": "+971562262070",
+    "cvUrl": "/AsankaManojMudannayakaResume-D.pdf",
+    "linkedin": "https://www.linkedin.com/in/asanka-manoj/",
+    "skills": [
+      "Google Ads",
+      "Meta Ads",
+      "SEO",
+      "WordPress",
+      "Lead Generation",
+      "AI Automation"
+    ]
+  },
+  "items": [
+    {
+      "id": "sample-software-project",
+      "title": "Add Your First Marketing Proof",
+      "type": "SEO Proof",
+      "description": "Use the admin page to add ad creatives, website screenshots, SEO proof, GSC growth, GBP results, and automation workflow screenshots.",
+      "tech": "SEO, Ads, Automation, Creative",
+      "link": "",
+      "image": "",
+      "featured": true,
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    }
+  ]
+}
