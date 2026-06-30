@@ -131,6 +131,7 @@ async function loadPortfolio() {
   setContact("whatsapp-link", profile.phone, toWhatsApp(profile.phone));
   setContact("whatsapp-link-top", profile.phone, toWhatsApp(profile.phone));
   setContact("sticky-whatsapp", profile.phone, toWhatsApp(profile.phone));
+  setContact("call-link", profile.phone, toTel(profile.phone));
   setContact("call-link-top", profile.phone, toTel(profile.phone));
   setContact("sticky-call", profile.phone, toTel(profile.phone));
   
