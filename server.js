@@ -123,6 +123,10 @@ app.use((error, _req, res, _next) => {
   res.status(400).json({ error: error.message || "Something went wrong." });
 });
 
-app.listen(port, () => {
-  console.log(`Portfolio running on http://localhost:${port}`);
-});
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Portfolio running on http://localhost:${port}`);
+  });
+}
+
+module.exports = app;
